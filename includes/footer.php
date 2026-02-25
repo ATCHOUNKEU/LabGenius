@@ -3,7 +3,7 @@
 ?>
     </main> <footer class="bas-de-page">
         <div class="infos-labo">
-            <p><strong>LabGenius</strong> - Laboratoire de Génomique de Nathan Mithou</p>
+            <p><strong>LabGenius</strong> - Laboratoire de Génomique de Nathan </p>
             <p>Projet de fin d'étude 2026 - Tous droits réservés</p>
         </div>
         

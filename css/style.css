@@ -191,4 +191,17 @@ main {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-/* --- FIN DU BLOC INDEX --- */
+
+/* ---  AJUSTEMENT DU LOGO DU LABORATOIRE --- */
+.mon-logo img {
+    height: 60px;       /* Nathan : Ajuste ce chiffre selon la taille voulue */
+    width: auto;        /* Garde les proportions de l'image */
+    display: block;     /* Évite les espaces vides sous l'image */
+    border-radius: 5px; /* Optionnel : arrondit un peu les angles si tu veux */
+    transition: transform 0.3s ease; /* Petit effet quand on passe la souris */
+}
+
+.mon-logo img:hover {
+    transform: scale(1.05); /* Le logo grossit légèrement au survol */
+}
+/* --- FIN DU BLOC LOGO --- */

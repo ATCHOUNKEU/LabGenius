@@ -13,13 +13,13 @@
         <div class="indicateurs-visuels">
             <div class="carte-stat">
                 <span class="label-stat">Séquences en Base</span>
-                <span class="nombre-affichage">3</span> <p class="petit-comm">// Nathan : Ce chiffre provient du COUNT(*) de la table sequences</p>
+                <span class="nombre-affichage">3</span> <p class="petit-comm">Ce chiffre provient du COUNT(*) de la table sequences</p>
             </div>
 
             <div class="carte-stat">
                 <span class="label-stat">État des Systèmes</span>
                 <span class="statut-badge actif">Opérationnel</span>
-                <p class="petit-comm">// Nathan : Indique si le séquenceur est prêt à l'emploi</p>
+                <p class="petit-comm"> Indique si le séquenceur est prêt à l'emploi</p>
             </div>
         </div>
     </header>
@@ -31,11 +31,11 @@
             <div class="liste-projets">
                 <div class="item-projet">
                     <strong>Étude de la Vision :</strong> Analyse du génome rétinien.
-                    <p class="detail-comm">// Nathan : On utilise ici les données 'Humain' de notre SQL</p>
+                    <p class="detail-comm"> On utilise ici les données 'Humain' de notre SQL</p>
                 </div>
                 <div class="item-projet">
                     <strong>Résistance Bactérienne :</strong> Séquençage des souches infectieuses.
-                    <p class="detail-comm">// Nathan : Analyse basée sur l'échantillon 'Microbe'</p>
+                    <p class="detail-comm"> Analyse basée sur l'échantillon 'Microbe'</p>
                 </div>
             </div>
         </section>
@@ -63,18 +63,18 @@
                     </tr>
                 </tbody>
             </table>
-            <p class="comm-footer">// Nathan : Ce tableau sera bientôt synchronisé avec la table 'sequences'</p>
+            <p class="comm-footer"> Ce tableau sera bientôt synchronisé avec la table 'sequences'</p>
         </section>
 
         <section class="bloc-info large">
             <h2>Journaux d'Activité (Logs)</h2>
             <div class="terminal-logs">
-                <p><code>[14:10]</code> - Connexion sécurisée de l'administrateur <strong>Nathan Mithou</strong>.</p>
+                <p><code>[14:10]</code> - Connexion sécurisée de l'administrateur <strong>Nathan </strong>.</p>
                 <p><code>[14:25]</code> - Modification de la structure dans <em>lagbenius.sql</em> détectée.</p>
                 <p><code>[15:00]</code> - Nouvelle séquence ajoutée : "Bactérie Résistante".</p>
                 <p><code>[15:05]</code> - Déconnexion de l'utilisateur via <em>logout.php</em>.</p>
             </div>
-            <p class="comm-footer">// Nathan : Ces logs assurent la traçabilité complète de nos manipulations génétiques.</p>
+            <p class="comm-footer">// Ces logs assurent la traçabilité complète de nos manipulations génétiques.</p>
         </section>
 
     </div>

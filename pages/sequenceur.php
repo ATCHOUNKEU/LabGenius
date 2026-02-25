@@ -1,5 +1,5 @@
 <?php 
-/** * NATHAN MITHOU - INTERFACE DU SÉQUENCEUR GÉNOMIQUE
+/** *  - INTERFACE DU SÉQUENCEUR GÉNOMIQUE
  * Cet outil permet de manipuler l'ADN en temps réel.
  * On y retrouve la visualisation, l'édition et la simulation de mutations.
  */
@@ -15,7 +15,7 @@
     <section class="bloc-edition">
         <h2>Éditeur de Séquence ADN</h2>
         <div class="interface-saisie">
-            <label for="code-adn">// Nathan : Champ d'édition directe de la chaîne de caractères</label>
+            <label for="code-adn">//  Champ d'édition directe de la chaîne de caractères</label>
             <textarea id="code-adn" rows="5" placeholder="Entrez la séquence (ex: ATGC...)">ATGCGTCGATAGCTAGCTAGCTAGCTA</textarea>
         </div>
     </section>
@@ -27,7 +27,7 @@
             <div class="base base-t">T</div>
             <div class="base base-g">G</div>
             <div class="base base-c">C</div>
-            <p class="legende-graphique">// Nathan : Visualisation par blocs de nucléotides pour une meilleure lecture.</p>
+            <p class="legende-graphique"> Visualisation par blocs de nucléotides pour une meilleure lecture.</p>
         </div>
     </section>
 
@@ -47,7 +47,7 @@
             <li>[ACTION] - Chargement de la séquence initiale réussie.</li>
             <li>[ACTION] - Analyse du gène de la vision terminée.</li>
         </ul>
-        <p class="comm-technique">// Nathan : Ce journal trace les changements sans afficher l'heure, conformément à tes souhaits.</p>
+        <p class="comm-technique">//  Ce journal trace les changements sans afficher l'heure, conformément à tes souhaits.</p>
     </section>
 
 </div>

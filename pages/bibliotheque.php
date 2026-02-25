@@ -55,14 +55,14 @@
                 </tr>
             </tbody>
         </table>
-        <p class="commentaire-nathan">// Nathan : Les données affichées ici correspondent à tes captures SQL.</p>
+        <p class="commentaire-nathan"> Les données affichées ici correspondent à tes captures SQL.</p>
     </section>
 
     <footer class="biblio-footer">
         <div class="note-info">
             <p><strong>Info Système :</strong> Le bouton "Charger" utilise la mémoire locale pour transférer le génome vers la page Séquenceur.</p>
         </div>
-        <p class="comm-technique">// Nathan : Toute modification marquée est conservée pour la session actuelle.</p>
+        <p class="comm-technique">Toute modification marquée est conservée pour la session actuelle.</p>
     </footer>
 
 </div>
