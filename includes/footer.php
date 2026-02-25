@@ -11,6 +11,6 @@
             <p>Accès restreint au personnel autorisé</p>
         </div>
     </footer>
-
+    <script src="js/script_du_site.js"></script>
 </body>
 </html>

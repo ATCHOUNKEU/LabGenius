@@ -8,8 +8,7 @@
     <title>LabGenius - Projet Nathan</title>
     
     <link rel="stylesheet" href="css/style.css">
-    
-    <link rel="stylesheet" href="css/<?php echo $p; ?>.css">
+   
 </head>
 <body>
 

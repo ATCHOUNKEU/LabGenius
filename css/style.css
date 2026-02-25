@@ -1,53 +1,194 @@
-/* Style général fait par Nathan pour tout le site */
+/**  DESIGN SYSTÈME LABGENIUS
+ * Utilisation de variables pour une maintenance simplifiée.
+ */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f7f6; /* Gris tres leger pour le fond */
-    color: #333;
+:root {
+    /*  Palette de couleurs scientifiques */
+    --bg-dark: #0f172a;        /* Fond principal */
+    --bg-card: #1e293b;        /* Fond des blocs et cartes */
+    --accent-blue: #38bdf8;    /* Couleur d'action (Séquences) */
+    --accent-green: #4ade80;   /* Couleur des logs et succès */
+    --text-main: #f1f5f9;      /* Texte principal */
+    --text-muted: #94a3b8;     /* Texte secondaire */
+    --danger: #f87171;         /* Mutations et alertes */
+    --border-color: #334155;   /* Bordures discrètes */
 }
 
-/* Design de la barre de navigation */
-.menu-haut {
-    background-color: #2c3e50;
-    color: white;
-    padding: 15px 50px;
+/* 1. RESET ET BASES */
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* 2. NAVIGATION ET HEADER COMMUN */
+.header-labo {
+    background-color: var(--bg-card);
+    padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid var(--accent-blue);
 }
 
-.logo-nom {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.liens a {
-    color: white;
+.nav-links a {
+    color: var(--text-muted);
     text-decoration: none;
-    margin-left: 30px;
-    font-size: 17px;
-    transition: 0.3s;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-.liens a:hover {
-    color: #3498db; /* Bleu clair au survol */
+.nav-links a:hover {
+    color: var(--accent-blue);
 }
 
-/* Zone de contenu pour que ce ne soit pas colle aux bords */
-.conteneur-principal {
-    max-width: 1100px;
-    margin: 40px auto;
-    min-height: 70vh; /* Pour que le footer reste en bas */
+/* 3. PRÉSENTATION ET CATALOGUE */
+.zone-catalogue, .presentation-container {
+    padding: 40px 5%;
 }
 
-/* Style du pied de page */
-.bas-de-page {
-    text-align: center;
+.bloc-service {
+    display: flex;
+    gap: 30px;
+    background: var(--bg-card);
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.image-service img {
+    width: 300px;
+    border-radius: 8px;
+    border: 2px solid var(--border-color); /* Pour mes photos vision, bactérie, inconnu */
+}
+
+/* 4. DASHBOARD - INDICATEURS ET GRILLE */
+.grille-dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     padding: 20px;
-    background-color: #f1f1f1;
-    border-top: 1px solid #ddd;
-    margin-top: 50px;
 }
+
+.carte-stat {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.nombre-affichage {
+    font-size: 3.5rem;
+    color: var(--accent-blue);
+    display: block;
+}
+
+/* 5. BIBLIOTHÈQUE - TABLEAU SQL */
+.table-adn {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: var(--bg-card);
+}
+
+.table-adn th {
+    background: var(--border-color);
+    color: var(--accent-blue);
+    padding: 15px;
+    text-align: left;
+}
+
+.table-adn td {
+    padding: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.badge {
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.humain { background: rgba(56, 189, 248, 0.2); color: var(--accent-blue); }
+.microbe { background: rgba(74, 222, 128, 0.2); color: var(--accent-green); }
+
+/* 6. SÉQUENCEUR - INTERFACE TECHNIQUE */
+.rendu-graphique {
+    background: #000;
+    padding: 20px;
+    display: flex;
+    gap: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+}
+
+.base {
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+.base-a { color: var(--danger); border: 1px solid var(--danger); }
+.base-t { color: #fbbf24; border: 1px solid #fbbf24; }
+.base-g { color: var(--accent-green); border: 1px solid var(--accent-green); }
+.base-c { color: var(--accent-blue); border: 1px solid var(--accent-blue); }
+
+.terminal-logs {
+    background: #050505;
+    color: var(--accent-green);
+    font-family: 'Courier New', monospace;
+    padding: 15px;
+    height: 180px;
+    overflow-y: auto;
+    border: 1px solid var(--accent-green);
+}
+
+/* 7. BOUTONS D'ACTION */
+.btn-action, .btn-charger, .btn-outil {
+    background: var(--accent-blue);
+    color: var(--bg-dark);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.btn-action:hover {
+    background: #7dd3fc;
+    transform: translateY(-2px);
+}
+
+/* 8. PAGES SPÉCIALES (LOGOUT / INDEX REDIRECT) */
+.msg-redirect {
+    text-align: center;
+    margin-top: 100px;
+    color: var(--text-muted);
+}
+
+/* --- STYLE SPÉCIFIQUE À LA STRUCTURE INDEX --- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 80vh; /* j'Assure que le footer reste en bas */
+}
+
+.conteneur-central {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.5s ease-in; /* Petit effet fluide au chargement */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* --- FIN DU BLOC INDEX --- */
